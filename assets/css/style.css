@@ -1,0 +1,224 @@
+.card {
+  margin: 20px 10px;
+  text-align: left;
+}
+
+.card a {
+  color: #B30000;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.card a:hover {
+  color: #575454;
+  text-decoration: none;
+}
+
+.encabezado {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  width: 100%;
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba), color-stop(0), color-stop(0), color-stop(0.5), color-stop(0, rgba), color-stop(0), color-stop(0), to(0.5)), url(../img/viaje.jpg);
+  background-image: linear-gradient(0deg, rgba 0, 0, 0, 0.5, rgba 0, 0, 0, 0.5), url(../img/viaje.jpg);
+  width: 100%;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  color: #faf3ea;
+  line-height: 650px;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.carousel-inner {
+  height: 450px;
+}
+
+.navbar {
+  width: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+
+.navbar ul {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #575454;
+  font-size: 1rem;
+  position: relative;
+}
+
+.navbar link {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.navbar link:after {
+  width: 0;
+  height: 4px;
+  background-color: #B30000;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  will-change: width;
+}
+
+.pie {
+  padding: 5%;
+  margin: 10px;
+}
+
+.body {
+  min-height: 100vh;
+}
+
+.body grid-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 2px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto 100px;
+      grid-template-rows: auto auto 100px;
+      grid-template-areas: "header" "main" "footer";
+}
+
+.main-content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+.main-content h2 {
+  margin: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.maincontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px;
+}
+
+.maincontainer img {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.maincontainer img:before {
+  content: "paquetes imperdibles";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(6, 6, 6, 0.615);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  color: #faf3ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.maincontainer img:before:hover:before {
+  -webkit-transform: scale(1) rotate(360deg);
+          transform: scale(1) rotate(360deg);
+}
+
+.body {
+  min-height: 100vh;
+}
+
+.body grid-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 2px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto 100px;
+      grid-template-rows: auto auto 100px;
+      grid-template-areas: "header" "main" "footer";
+}
+/*# sourceMappingURL=style.css.map */
