@@ -1,0 +1,30 @@
+.tarjeta{
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    }   
+    
+   .tarjeta__texto{ 
+        margin-left: 10px; 
+        text-align: left;
+    }
+
+    .boton{
+        border: map-get($boton , $border );
+        padding: map-get($boton , $padding );
+        border-radius: map-get($boton, $radio );
+        @include estilo(rgb(184, 16, 16), #fff , 50px, auto );
+    }
+
+    .tarjeta2{
+        @extend .tarjeta;
+        flex-direction: row;
+        @extend .tarjeta__texto;
+    }
+
+
+
+
+
+
+    

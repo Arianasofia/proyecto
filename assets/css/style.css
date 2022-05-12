@@ -121,6 +121,9 @@
 }
 
 .pie {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
   padding: 5%;
   margin: 10px;
 }
@@ -166,7 +169,7 @@
   margin: 50px;
 }
 
-.maincontainer img {
+.main-img {
   height: 400px;
   width: 400px;
   position: relative;
@@ -174,7 +177,7 @@
   overflow: hidden;
 }
 
-.maincontainer img:before {
+.main-img::before {
   content: "paquetes imperdibles";
   position: absolute;
   top: 0;
@@ -202,7 +205,7 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.maincontainer img:before:hover:before {
+.main-img::before:hover::before {
   -webkit-transform: scale(1) rotate(360deg);
           transform: scale(1) rotate(360deg);
 }
@@ -220,5 +223,25 @@
   -ms-grid-rows: auto auto 100px;
       grid-template-rows: auto auto 100px;
       grid-template-areas: "header" "main" "footer";
+}
+
+.tarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+}
+
+.tarjeta__texto {
+  margin-left: 10px;
+}
+
+.boton {
+  border: 0px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #B30000;
+  color: #faf3ea;
 }
 /*# sourceMappingURL=style.css.map */

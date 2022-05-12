@@ -1,0 +1,6 @@
+@mixin estilo ($bg-color,$colorletra,$witdh,$height) { 
+    background-color: $bg-color;
+    color: $colorletra;
+    width: $witdh;
+    height: $height;
+}
